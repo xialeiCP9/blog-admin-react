@@ -93,5 +93,5 @@ export const reqAddArticle = article => $http.post('/rest/articles', article)
 export const reqUpdateArticle = article => $http.put('/rest/articles', article)
 /* 删除文章 */
 export const reqDeleteArticle = id => $http.delete('/rest/articles/' + id)
-/* 上传图片 */
+/* 上传图片接口 */
 export const reqUploadImg = file => $http.post('/upload', file)
