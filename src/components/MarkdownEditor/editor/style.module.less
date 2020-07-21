@@ -1,0 +1,59 @@
+.rc-md-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  min-height: 0;
+  border: 1px solid #e0e0e0;
+  &.full{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%!important;
+    z-index: 9999;
+  }
+  .md-container{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+    min-height: 0;
+    .section{
+      flex: 1;
+      background-color: #fff;
+      .section-container{
+        box-sizing: border-box;
+        padding: 10px 15px 15px 15px;
+      }
+    }
+    .visible{
+      display: block;
+    }
+    .in-visible{
+      display: none;
+    }
+    .sec-md{
+      .input{
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        resize: none;
+        color: #333;
+        font-size: 14px;
+        line-height: 1.7;
+        background: #fff;
+        overflow-y: scroll;
+      }
+    }
+    .sec-html{
+      overflow: auto;
+      .html-wrap{
+        height: 100%;
+      }
+    }
+  }
+}
